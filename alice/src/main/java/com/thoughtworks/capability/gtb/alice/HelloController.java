@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 public class HelloController {
     @GetMapping("/hello")
     @ResponseStatus(HttpStatus.OK)
-    public String getHelloFromBob() {
+    public String hello() {
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<String> response = restTemplate.getForEntity("http://bob:8081/hello", String.class);
         return response.getBody();

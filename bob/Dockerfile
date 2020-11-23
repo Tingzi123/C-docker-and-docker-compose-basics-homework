@@ -7,4 +7,4 @@ COPY build/libs/bob-0.0.1-SNAPSHOT.jar bob.jar
 #java -jar
 ENTRYPOINT ["java","-jar","/bob.jar"]
 
-EXPOSE 8080
+EXPOSE 8081
