@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/hello")
     @ResponseStatus(HttpStatus.OK)
-    public String getHello(){
+    public String hello(){
         return "Hello from Bob!";
     }
 }
